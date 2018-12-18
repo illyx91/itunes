@@ -1,0 +1,38 @@
+#management{
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .users{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    >div{
+      border-bottom: 1px solid lightgrey;
+      padding: 20px 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover{
+        background-color: lighten(lightgrey, 15);
+      }
+
+      >button{
+        background-color: deepskyblue;
+        padding: 10px;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

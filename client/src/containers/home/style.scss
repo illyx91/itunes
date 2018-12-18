@@ -1,0 +1,54 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  #loader {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  #top-ten{
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+
+    >div{
+      border-bottom: 1px solid lightgrey;
+      padding: 10px;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      >label{
+        text-align: left;
+      }
+    }
+  }
+
+  .home-form {
+    padding-top: 50px;
+
+    > input {
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid deepskyblue;
+      padding: 5px 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    > button {
+      border-radius: 5px;
+      border: 1px solid deepskyblue;
+      padding: 5px 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+    }
+  }
+}

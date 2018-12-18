@@ -1,0 +1,23 @@
+.media-card {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  padding-bottom: 10px;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  > img {
+    width: 100%;
+  }
+
+  > label {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
